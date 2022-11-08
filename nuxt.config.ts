@@ -4,5 +4,4 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables/**'],
   },
-  experimental: { noScripts: true },
 });
