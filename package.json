@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "nuxt": "3.0.0-rc.13",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "sass": "^1.56.0"
+  }
+}
