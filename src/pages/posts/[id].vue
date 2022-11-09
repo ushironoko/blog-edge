@@ -12,10 +12,6 @@ if (params.id !== 'url') {
   );
   contents.value = data.value?.contentHtml || '';
 }
-
-onMounted(() => {
-  console.log(params);
-});
 </script>
 
 <template>

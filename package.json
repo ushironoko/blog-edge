@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
+    "mlly": "^0.5.16",
     "nuxt": "3.0.0-rc.13",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
