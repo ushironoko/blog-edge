@@ -7,7 +7,6 @@ const { data, pending } = useFetch(
   `/api/posts/postData?id=${encodeURIComponent(id)}`,
   {
     key: id,
-    initialCache: false,
   }
 );
 </script>
