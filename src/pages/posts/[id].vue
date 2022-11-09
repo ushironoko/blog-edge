@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const { params, name } = useRoute();
+const { params } = useRoute();
+
+const id = Array.isArray(params.id) ? params.id[0] : params.id;
 
 const { data, pending } = useFetch(
-  `/api/posts/postData?id=${encodeURIComponent(params.id as string)}`,
+  `/api/posts/postData?id=${encodeURIComponent(id)}`,
   {
-    key: name?.toString(),
+    key: id,
     initialCache: false,
   }
 );
