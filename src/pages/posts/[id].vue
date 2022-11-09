@@ -1,15 +1,23 @@
 <script setup lang="ts">
 const { params, name } = useRoute();
+const contents = ref('');
 
-const { data } = useAsyncData(name?.toString() || '', async () => {
-  if (!Array.isArray(params.id)) {
-    const contentHtml = (await getPostData(params.id)).contentHtml;
-    return contentHtml;
-  }
-  return '<div />';
+if (params.id !== 'url') {
+  const { data } = useFetch(
+    `/api/posts/postData?id=${encodeURIComponent(params.id as string)}`,
+    {
+      key: name?.toString(),
+      initialCache: false,
+    }
+  );
+  contents.value = data.value?.contentHtml || '';
+}
+
+onMounted(() => {
+  console.log(params);
 });
 </script>
 
 <template>
-  <div v-html="data"></div>
+  <div v-html="contents"></div>
 </template>

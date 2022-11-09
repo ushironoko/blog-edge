@@ -1,8 +1,5 @@
 <script setup lang="ts">
-const { data: posts } = useAsyncData('key', async () => {
-  const posts = getSortedPostsData();
-  return { ...posts };
-});
+const { data: posts } = useFetch('/api/posts/sortedpostsData');
 </script>
 
 <template>
