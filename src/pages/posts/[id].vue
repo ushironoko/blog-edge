@@ -9,5 +9,5 @@ const { data } = useFetch(`/api/posts/postData?id=${encodeURIComponent(id)}`, {
 </script>
 
 <template>
-  <div v-html="data?.contentHtml"></div>
+  <div class="whitespace-pre-wrap" v-html="data?.contentHtml"></div>
 </template>
