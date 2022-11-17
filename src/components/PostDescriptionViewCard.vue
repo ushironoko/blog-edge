@@ -14,7 +14,13 @@ defineProps<{
       <div class="flex flex-col">
         <div class="mb-1">
           <div>
-            <img class="w-full" width="252" height="164" :src="ogImageUrl" />
+            <img
+              alt=""
+              class="w-full"
+              width="252"
+              height="164"
+              :src="ogImageUrl"
+            />
           </div>
           <div class="mt-2">
             <h2 class="font-normal text-16">
