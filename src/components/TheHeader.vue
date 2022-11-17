@@ -5,7 +5,7 @@
     </div>
     <div class="mb-2 flex justify-center">
       <div class="grid grid-cols-[1fr_1fr] gap-1">
-        <div class="w-auto">
+        <div>
           <a
             target="_blunk"
             rel="noopener"

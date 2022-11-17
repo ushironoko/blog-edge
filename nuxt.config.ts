@@ -33,9 +33,6 @@ export default defineNuxtConfig({
     },
   },
   srcDir: 'src',
-  imports: {
-    dirs: ['composables/**'],
-  },
   css: ['~/assets/css/tailwind.css', '~/assets/css/global.css'],
   postcss: {
     plugins: {
