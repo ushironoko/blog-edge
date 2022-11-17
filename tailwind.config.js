@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,vue}', './nuxt.config.{js,ts}'],
-  // corePlugins: {
-  //   preflight: false,
-  // },
   theme: {
     screens: {
+      tablet: { min: '720px' },
       pc: { min: '960px' },
     },
     width: {
