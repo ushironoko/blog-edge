@@ -5,6 +5,9 @@ module.exports = {
   //   preflight: false,
   // },
   theme: {
+    screens: {
+      pc: { min: '960px' },
+    },
     width: {
       auto: 'auto',
       full: '100%',
@@ -17,6 +20,10 @@ module.exports = {
       20: ['20px', { lineHeight: '32px', letterSpacing: '0.01em' }],
       28: ['28px', { lineHeight: '44px', letterSpacing: '0.01em' }],
       32: ['32px', { lineHeight: '52px', letterSpacing: '0.01em' }],
+    },
+    fontWeight: {
+      normal: 400,
+      bold: 700,
     },
     spacing: {
       0: '0px',

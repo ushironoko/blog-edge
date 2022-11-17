@@ -1,5 +1,5 @@
 <template>
-  <div class="font-abel mt-[180px]">
+  <div class="font-abel pc:mt-[180px] mt-4">
     <div class="mb-2 flex justify-center">
       <NuxtLink href="/"><h1 class="text-32">ushironoko.me</h1></NuxtLink>
     </div>

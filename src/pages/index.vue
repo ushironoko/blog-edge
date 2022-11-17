@@ -6,7 +6,7 @@ const ogImageUrl = 'https://placehold.jp/252x164.png';
 <template>
   <div class="flex justify-center">
     <main>
-      <section class="grid grid-cols-[1fr_1fr_1fr] gap-5">
+      <section class="grid pc:grid-cols-[1fr_1fr_1fr] grid-cols-[1fr] gap-5">
         <div v-for="post in posts" :key="post.id">
           <PostDescriptionViewCard :postData="post" :ogImageUrl="ogImageUrl" />
         </div>
