@@ -18,7 +18,7 @@
             class="mobile:hidden"
             target="_blunk"
             rel="noopener"
-            href="https://github.com/ushironoko/blog"
+            href="https://github.com/ushironoko/blog-edge"
             >GitHub</a
           >
         </div>
