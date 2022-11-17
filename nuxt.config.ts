@@ -4,4 +4,21 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables/**'],
   },
+  css: ['~/assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  modules: [
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: { Abel: true, 'Noto+Sans+JP': true },
+        download: true,
+        inject: true,
+      },
+    ],
+  ],
 });

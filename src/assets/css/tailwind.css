@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind utilities;
+
+ul {
+  @apply list-disc;
+  @apply list-inside;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: 'Noto+Sans+JP';
+}

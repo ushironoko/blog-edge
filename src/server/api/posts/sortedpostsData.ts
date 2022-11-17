@@ -1,3 +1,4 @@
+import { Post } from './../../../types/posts';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -17,12 +18,7 @@ export default defineEventHandler(() => {
       return {
         id,
         ...matterResult.data,
-      } as {
-        id: string;
-        title: string;
-        description: string;
-        publishedAt: string;
-      };
+      } as Post;
     } catch (e) {
       console.error(e);
       return [];
